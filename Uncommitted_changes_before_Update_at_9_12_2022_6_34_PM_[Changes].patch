@@ -1,0 +1,31 @@
+Index: src/Start/Star.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Start/Star.java b/src/Start/Star.java
+--- a/src/Start/Star.java	
++++ b/src/Start/Star.java	
+@@ -16,5 +16,6 @@
+             }
+             System.out.println();
+         }
++        System.out.println("WELCOME TO JAVA");
+     }
+ }
+Index: src/Start/Tables.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Start/Tables.java b/src/Start/Tables.java
+--- a/src/Start/Tables.java	
++++ b/src/Start/Tables.java	
+@@ -2,6 +2,7 @@
+ 
+ public class Tables {
+     public static void main(String[] args) {
++        System.out.println("WELCOME TO JAVA");
+         for (int i = 1; i <=10 ; i++) {
+             for (int j = 1; j <=10 ; j++) {
+                 System.out.print(i*j+"\t");
