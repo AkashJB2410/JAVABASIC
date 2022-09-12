@@ -3,6 +3,8 @@ package Start;
 public class Star {
     public static void main(String[] args) {
         System.out.println("WELCOME TO JAVA");
+        System.out.println("WELCOME TO JAVA");
+        System.out.println("WELCOME");
         System.out.println("WELCOME");
         for (int k = 0; k <= 5; k++) {
             for (int i = 0; i < 6 ; i++) {
