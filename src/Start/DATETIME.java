@@ -9,7 +9,7 @@ public class DATETIME {
 
     public static <DateAndTime> void main(String[] args) throws ParseException {
         System.out.println("DATE AMD TIME");
-        String sDate1 = "2022-10-24-23:59:59";
+        String sDate1 = "2022-09-13-18:17:40";
         System.out.println(sDate1);
         char ch=' ';
         String b = "";
