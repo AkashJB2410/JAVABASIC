@@ -9,5 +9,6 @@ public class Tables {
             }
             System.out.println();
         }
+        System.out.println();
     }
 }
