@@ -8,6 +8,7 @@ import java.util.Date;
 public class DATETIME {
 
     public static <DateAndTime> void main(String[] args) throws ParseException {
+        System.out.println("DATE AMD TIME");
         String sDate1 = "2022-10-24-23:59:59";
         char ch=' ';
         String b = "";
