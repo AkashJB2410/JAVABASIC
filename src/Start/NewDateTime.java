@@ -23,26 +23,47 @@ public class NewDateTime {
             }
         }
     }
-
     public  static void main1 () throws ParseException {
-        SimpleDateFormat s1 = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = s1.parse(sDate1);
-        System.out.println("\n"+date);
-    }
-    public   static void main2 () throws ParseException {
         System.out.println(sDate1);
-        char ch=' ';
-        String b = "";
+        char ch='-';
+        String b ="";
         for (int i = 0; i < sDate1.length() ; i++) {
             char a = sDate1.charAt(i);
-            if (sDate1.charAt(i)=='-'&i==10){
+            if (a=='/'){
                 b=b+ch;
             }
             else {
                 b=b+a;
             }
         }
+        SimpleDateFormat s1 = new SimpleDateFormat("yyyy-MM-dd");
+        System.out.println(b);
+        Date date = s1.parse(b);
+        System.out.println("\n"+date);
+    }
+    public   static void main2 () throws ParseException {
+        System.out.println(sDate1);
+        char ch=' ';
+        char ch1='-';
+        String b = "";
+        for (int i = 0; i < sDate1.length() ; i++) {
+            char a = sDate1.charAt(i);
+            if (a=='-'&i==10){
+                b=b+ch;
+            }
+            else { if (a == '/' & i == 10) {
+                b = b + ch;
+            }
+                else { if (a=='/'){
+                        b=b+ch1;
+                    } else {
+                        b = b + a;
+                    }
+                }
+            }
+        }
         SimpleDateFormat s1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        System.out.println(b);
         Date date = s1.parse(b);
         System.out.println("\n"+date);
     }
