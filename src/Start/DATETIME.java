@@ -22,6 +22,7 @@ public class DATETIME {
                 b=b+a;
             }
         }
+
         SimpleDateFormat s1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = s1.parse(b);
         System.out.println(b+"\n"+date);
